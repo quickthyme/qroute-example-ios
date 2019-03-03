@@ -47,7 +47,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <segue destination="Mp4-I5-1y9" kind="presentation" identifier="ToContacts" id="BvR-Kw-jg5"/>
+                        <segue destination="Mp4-I5-1y9" kind="presentation" identifier="ToContactUs" id="BvR-Kw-jg5"/>
                         <segue destination="ANR-aw-Ho9" kind="show" identifier="ToMessageCenter" id="lw1-k7-3dt"/>
                     </connections>
                 </viewController>

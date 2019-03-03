@@ -16,6 +16,10 @@
 		DC08BCD2222B62B100622493 /* MockQTRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCCD222B62B100622493 /* MockQTRoutable.swift */; };
 		DC08BCD8222B62F700622493 /* QTRouteResolverTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCD6222B62F700622493 /* QTRouteResolverTestHelpers.swift */; };
 		DC08BCD9222B63BB00622493 /* MockQTRouteResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCCB222B62B100622493 /* MockQTRouteResolver.swift */; };
+		DC1EDBCB222BD2D800646C13 /* ToChildSegueResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EDBCA222BD2D800646C13 /* ToChildSegueResolverAction.swift */; };
+		DC1EDBCC222BD2D800646C13 /* ToChildSegueResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EDBCA222BD2D800646C13 /* ToChildSegueResolverAction.swift */; };
+		DC1EDBCF222BDAFA00646C13 /* RoutableCompleting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EDBCE222BDAFA00646C13 /* RoutableCompleting.swift */; };
+		DC1EDBD0222BDAFA00646C13 /* RoutableCompleting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EDBCE222BDAFA00646C13 /* RoutableCompleting.swift */; };
 		DC1F63882220BC63003842BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1F63872220BC63003842BB /* AppDelegate.swift */; };
 		DC1F638A2220BC63003842BB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1F63892220BC63003842BB /* RootViewController.swift */; };
 		DC1F638D2220BC63003842BB /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1F638B2220BC63003842BB /* Root.storyboard */; };
@@ -30,7 +34,6 @@
 		DC23ACC5222A702C00A00D40 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BE8B2224FFC7009A2CF1 /* ContactUsViewController.swift */; };
 		DC23ACC6222A703900A00D40 /* HelpInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06B72226593D00A69630 /* HelpInjector.swift */; };
 		DC23ACC7222A703900A00D40 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BE772224FEC5009A2CF1 /* HelpViewController.swift */; };
-		DC23ACC8222A703900A00D40 /* HelpToChildResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BEA022251401009A2CF1 /* HelpToChildResolver.swift */; };
 		DC23ACC9222A705700A00D40 /* RootInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06CC2226602500A69630 /* RootInjector.swift */; };
 		DC23ACCA222A705700A00D40 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1F63892220BC63003842BB /* RootViewController.swift */; };
 		DC23ACCB222A705700A00D40 /* RootToChildResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BE99222512BC009A2CF1 /* RootToChildResolver.swift */; };
@@ -42,11 +45,11 @@
 		DC23ACD1222A707200A00D40 /* ToDoDetailInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06BA22265A3100A69630 /* ToDoDetailInjector.swift */; };
 		DC23ACD2222A707200A00D40 /* ToDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BE812224FF26009A2CF1 /* ToDoDetailViewController.swift */; };
 		DC23ACD3222A707A00A00D40 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1F639E2220C1F7003842BB /* AppRoute.swift */; };
-		DC23ACD4222A707F00A00D40 /* ToChildUIStoryboardPresentModalResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolver.swift */; };
-		DC23ACD5222A707F00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolver.swift */; };
-		DC23ACD6222A707F00A00D40 /* ToParentAppRouteRootResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolver.swift */; };
-		DC23ACD7222A707F00A00D40 /* ToParentDismissModalResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5083C2227E42E00804586 /* ToParentDismissModalResolver.swift */; };
-		DC23ACD8222A707F00A00D40 /* ToParentNavigationControllerPopResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolver.swift */; };
+		DC23ACD4222A707F00A00D40 /* ToChildUIStoryboardPresentModalResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolverAction.swift */; };
+		DC23ACD5222A707F00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift */; };
+		DC23ACD6222A707F00A00D40 /* ToParentAppRouteRootResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolverAction.swift */; };
+		DC23ACD7222A707F00A00D40 /* ToParentDismissModalResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5083C2227E42E00804586 /* ToParentDismissModalResolverAction.swift */; };
+		DC23ACD8222A707F00A00D40 /* ToParentNavigationControllerPopResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolverAction.swift */; };
 		DC23ACD9222A70BE00A00D40 /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE7352229048B0050F70E /* MockNavigationController.swift */; };
 		DC23ACDA222A70BE00A00D40 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AC412229896300A00D40 /* MockViewController.swift */; };
 		DC23ACDB222A70C300A00D40 /* MockViewControllerRoutableInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE7312228F92D0050F70E /* MockViewControllerRoutableInjector.swift */; };
@@ -58,10 +61,10 @@
 		DC23ACE1222A70DB00A00D40 /* ToDoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06C422265DF000A69630 /* ToDoViewControllerTests.swift */; };
 		DC23ACE2222A70DB00A00D40 /* ToDoDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06BE22265A8100A69630 /* ToDoDetailViewControllerTests.swift */; };
 		DC23ACE3222A70E600A00D40 /* AppRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8369B2221D33C00E714F8 /* AppRouteTests.swift */; };
-		DC23ACE4222A70EB00A00D40 /* ToChildUIStoryboardPresentModalResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE7212228DB5B0050F70E /* ToChildUIStoryboardPresentModalResolverTests.swift */; };
-		DC23ACE5222A70EB00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE7332228FB910050F70E /* ToChildUIStoryboardNavigationControllerPushResolverTests.swift */; };
-		DC23ACE6222A70EB00A00D40 /* ToParentDismissModalResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE73722290F390050F70E /* ToParentDismissModalResolverTests.swift */; };
-		DC23ACE7222A70EB00A00D40 /* ToParentNavigationControllerPopResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AC432229922600A00D40 /* ToParentNavigationControllerPopResolverTests.swift */; };
+		DC23ACE4222A70EB00A00D40 /* ToChildUIStoryboardPresentModalResolverActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE7212228DB5B0050F70E /* ToChildUIStoryboardPresentModalResolverActionTests.swift */; };
+		DC23ACE5222A70EB00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolverActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE7332228FB910050F70E /* ToChildUIStoryboardNavigationControllerPushResolverActionTests.swift */; };
+		DC23ACE6222A70EB00A00D40 /* ToParentDismissModalResolverActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE73722290F390050F70E /* ToParentDismissModalResolverActionTests.swift */; };
+		DC23ACE7222A70EB00A00D40 /* ToParentNavigationControllerPopResolverActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AC432229922600A00D40 /* ToParentNavigationControllerPopResolverActionTests.swift */; };
 		DC4E06B5222656FC00A69630 /* ContactUsInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06B4222656FC00A69630 /* ContactUsInjector.swift */; };
 		DC4E06B82226593D00A69630 /* HelpInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06B72226593D00A69630 /* HelpInjector.swift */; };
 		DC4E06BC22265A3100A69630 /* ToDoDetailInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06BA22265A3100A69630 /* ToDoDetailInjector.swift */; };
@@ -86,13 +89,12 @@
 		DCA6BE9A222512BC009A2CF1 /* RootToChildResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BE99222512BC009A2CF1 /* RootToChildResolver.swift */; };
 		DCA6BE9D2225139B009A2CF1 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1F638B2220BC63003842BB /* Root.storyboard */; };
 		DCA6BE9E222513A5009A2CF1 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA6BE742224FEA6009A2CF1 /* Help.storyboard */; };
-		DCA6BEA122251401009A2CF1 /* HelpToChildResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BEA022251401009A2CF1 /* HelpToChildResolver.swift */; };
 		DCC508262227C64800804586 /* ToDoTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508252227C64800804586 /* ToDoTableViewManager.swift */; };
-		DCC5082E2227DA9700804586 /* ToParentAppRouteRootResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolver.swift */; };
-		DCC508312227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolver.swift */; };
-		DCC508342227DE7000804586 /* ToParentNavigationControllerPopResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolver.swift */; };
-		DCC508372227DF1600804586 /* ToChildUIStoryboardPresentModalResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolver.swift */; };
-		DCC5083D2227E42E00804586 /* ToParentDismissModalResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5083C2227E42E00804586 /* ToParentDismissModalResolver.swift */; };
+		DCC5082E2227DA9700804586 /* ToParentAppRouteRootResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolverAction.swift */; };
+		DCC508312227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift */; };
+		DCC508342227DE7000804586 /* ToParentNavigationControllerPopResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolverAction.swift */; };
+		DCC508372227DF1600804586 /* ToChildUIStoryboardPresentModalResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolverAction.swift */; };
+		DCC5083D2227E42E00804586 /* ToParentDismissModalResolverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5083C2227E42E00804586 /* ToParentDismissModalResolverAction.swift */; };
 		DCFDE72D2228EC9C0050F70E /* MockViewControllerRoutable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFDE72C2228EC9C0050F70E /* MockViewControllerRoutable.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +138,8 @@
 		DC08BCCB222B62B100622493 /* MockQTRouteResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockQTRouteResolver.swift; path = submodule/qtroute/Tests/QTRouteTests/mocks/MockQTRouteResolver.swift; sourceTree = SOURCE_ROOT; };
 		DC08BCCD222B62B100622493 /* MockQTRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockQTRoutable.swift; path = submodule/qtroute/Tests/QTRouteTests/mocks/MockQTRoutable.swift; sourceTree = SOURCE_ROOT; };
 		DC08BCD6222B62F700622493 /* QTRouteResolverTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QTRouteResolverTestHelpers.swift; path = submodule/qtroute/Tests/QTRouteTests/helpers/QTRouteResolverTestHelpers.swift; sourceTree = SOURCE_ROOT; };
+		DC1EDBCA222BD2D800646C13 /* ToChildSegueResolverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildSegueResolverAction.swift; sourceTree = "<group>"; };
+		DC1EDBCE222BDAFA00646C13 /* RoutableCompleting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutableCompleting.swift; sourceTree = "<group>"; };
 		DC1F63842220BC63003842BB /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1F63872220BC63003842BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC1F63892220BC63003842BB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +149,7 @@
 		DC1F63932220BC64003842BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC1F639E2220C1F7003842BB /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		DC23AC412229896300A00D40 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
-		DC23AC432229922600A00D40 /* ToParentNavigationControllerPopResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentNavigationControllerPopResolverTests.swift; sourceTree = "<group>"; };
+		DC23AC432229922600A00D40 /* ToParentNavigationControllerPopResolverActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentNavigationControllerPopResolverActionTests.swift; sourceTree = "<group>"; };
 		DC4E06B4222656FC00A69630 /* ContactUsInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsInjector.swift; sourceTree = "<group>"; };
 		DC4E06B72226593D00A69630 /* HelpInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpInjector.swift; sourceTree = "<group>"; };
 		DC4E06BA22265A3100A69630 /* ToDoDetailInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailInjector.swift; sourceTree = "<group>"; };
@@ -171,24 +175,23 @@
 		DCA6BE8F2224FFFB009A2CF1 /* MessageCenter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageCenter.storyboard; sourceTree = "<group>"; };
 		DCA6BE922225004B009A2CF1 /* MessageCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCenterViewController.swift; sourceTree = "<group>"; };
 		DCA6BE99222512BC009A2CF1 /* RootToChildResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootToChildResolver.swift; sourceTree = "<group>"; };
-		DCA6BEA022251401009A2CF1 /* HelpToChildResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpToChildResolver.swift; sourceTree = "<group>"; };
 		DCA6BEAA22251C12009A2CF1 /* UINavigationController+Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Completion.swift"; sourceTree = "<group>"; };
 		DCC508252227C64800804586 /* ToDoTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewManager.swift; sourceTree = "<group>"; };
-		DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentAppRouteRootResolver.swift; sourceTree = "<group>"; };
-		DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardNavigationControllerPushResolver.swift; sourceTree = "<group>"; };
-		DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentNavigationControllerPopResolver.swift; sourceTree = "<group>"; };
-		DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardPresentModalResolver.swift; sourceTree = "<group>"; };
-		DCC5083C2227E42E00804586 /* ToParentDismissModalResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentDismissModalResolver.swift; sourceTree = "<group>"; };
+		DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentAppRouteRootResolverAction.swift; sourceTree = "<group>"; };
+		DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardNavigationControllerPushResolverAction.swift; sourceTree = "<group>"; };
+		DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentNavigationControllerPopResolverAction.swift; sourceTree = "<group>"; };
+		DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardPresentModalResolverAction.swift; sourceTree = "<group>"; };
+		DCC5083C2227E42E00804586 /* ToParentDismissModalResolverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentDismissModalResolverAction.swift; sourceTree = "<group>"; };
 		DCE836902221D2C500E714F8 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE836942221D2C500E714F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE8369B2221D33C00E714F8 /* AppRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouteTests.swift; sourceTree = "<group>"; };
-		DCFDE7212228DB5B0050F70E /* ToChildUIStoryboardPresentModalResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardPresentModalResolverTests.swift; sourceTree = "<group>"; };
+		DCFDE7212228DB5B0050F70E /* ToChildUIStoryboardPresentModalResolverActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardPresentModalResolverActionTests.swift; sourceTree = "<group>"; };
 		DCFDE72A2228E8050050F70E /* MockViewControllerRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewControllerRoutable.swift; sourceTree = "<group>"; };
 		DCFDE72C2228EC9C0050F70E /* MockViewControllerRoutable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MockViewControllerRoutable.storyboard; sourceTree = "<group>"; };
 		DCFDE7312228F92D0050F70E /* MockViewControllerRoutableInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewControllerRoutableInjector.swift; sourceTree = "<group>"; };
-		DCFDE7332228FB910050F70E /* ToChildUIStoryboardNavigationControllerPushResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardNavigationControllerPushResolverTests.swift; sourceTree = "<group>"; };
+		DCFDE7332228FB910050F70E /* ToChildUIStoryboardNavigationControllerPushResolverActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToChildUIStoryboardNavigationControllerPushResolverActionTests.swift; sourceTree = "<group>"; };
 		DCFDE7352229048B0050F70E /* MockNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigationController.swift; sourceTree = "<group>"; };
-		DCFDE73722290F390050F70E /* ToParentDismissModalResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentDismissModalResolverTests.swift; sourceTree = "<group>"; };
+		DCFDE73722290F390050F70E /* ToParentDismissModalResolverActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToParentDismissModalResolverActionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,7 +399,6 @@
 				DCA6BE742224FEA6009A2CF1 /* Help.storyboard */,
 				DC4E06B72226593D00A69630 /* HelpInjector.swift */,
 				DCA6BE772224FEC5009A2CF1 /* HelpViewController.swift */,
-				DCA6BEA022251401009A2CF1 /* HelpToChildResolver.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -444,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				DC1F639E2220C1F7003842BB /* AppRoute.swift */,
+				DC1EDBCE222BDAFA00646C13 /* RoutableCompleting.swift */,
 				DCC508292227D56300804586 /* Resolvers */,
 			);
 			path = Routing;
@@ -452,11 +455,12 @@
 		DCC508292227D56300804586 /* Resolvers */ = {
 			isa = PBXGroup;
 			children = (
-				DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolver.swift */,
-				DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolver.swift */,
-				DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolver.swift */,
-				DCC5083C2227E42E00804586 /* ToParentDismissModalResolver.swift */,
-				DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolver.swift */,
+				DC1EDBCA222BD2D800646C13 /* ToChildSegueResolverAction.swift */,
+				DCC508362227DF1600804586 /* ToChildUIStoryboardPresentModalResolverAction.swift */,
+				DCC508302227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift */,
+				DCC5082D2227DA9700804586 /* ToParentAppRouteRootResolverAction.swift */,
+				DCC5083C2227E42E00804586 /* ToParentDismissModalResolverAction.swift */,
+				DCC508332227DE7000804586 /* ToParentNavigationControllerPopResolverAction.swift */,
 			);
 			path = Resolvers;
 			sourceTree = "<group>";
@@ -509,10 +513,10 @@
 		DCFDE7202228DB2F0050F70E /* Resolvers */ = {
 			isa = PBXGroup;
 			children = (
-				DCFDE7212228DB5B0050F70E /* ToChildUIStoryboardPresentModalResolverTests.swift */,
-				DCFDE7332228FB910050F70E /* ToChildUIStoryboardNavigationControllerPushResolverTests.swift */,
-				DCFDE73722290F390050F70E /* ToParentDismissModalResolverTests.swift */,
-				DC23AC432229922600A00D40 /* ToParentNavigationControllerPopResolverTests.swift */,
+				DCFDE7212228DB5B0050F70E /* ToChildUIStoryboardPresentModalResolverActionTests.swift */,
+				DCFDE7332228FB910050F70E /* ToChildUIStoryboardNavigationControllerPushResolverActionTests.swift */,
+				DCFDE73722290F390050F70E /* ToParentDismissModalResolverActionTests.swift */,
+				DC23AC432229922600A00D40 /* ToParentNavigationControllerPopResolverActionTests.swift */,
 			);
 			path = Resolvers;
 			sourceTree = "<group>";
@@ -668,25 +672,26 @@
 				DC23ACB0222A6CD500A00D40 /* StoryboardLoader.swift in Sources */,
 				DC1F638A2220BC63003842BB /* RootViewController.swift in Sources */,
 				DC23ACAF222A6CD500A00D40 /* UINavigationController+Completion.swift in Sources */,
+				DC1EDBCF222BDAFA00646C13 /* RoutableCompleting.swift in Sources */,
 				DC4E06B5222656FC00A69630 /* ContactUsInjector.swift in Sources */,
+				DC1EDBCB222BD2D800646C13 /* ToChildSegueResolverAction.swift in Sources */,
 				DC4E06C822265F2000A69630 /* MessageCenterInjector.swift in Sources */,
-				DCC5083D2227E42E00804586 /* ToParentDismissModalResolver.swift in Sources */,
+				DCC5083D2227E42E00804586 /* ToParentDismissModalResolverAction.swift in Sources */,
 				DCC508262227C64800804586 /* ToDoTableViewManager.swift in Sources */,
 				DC4E06BC22265A3100A69630 /* ToDoDetailInjector.swift in Sources */,
-				DCC508372227DF1600804586 /* ToChildUIStoryboardPresentModalResolver.swift in Sources */,
+				DCC508372227DF1600804586 /* ToChildUIStoryboardPresentModalResolverAction.swift in Sources */,
 				DC1F639F2220C1F7003842BB /* AppRoute.swift in Sources */,
 				DCA6BE822224FF26009A2CF1 /* ToDoDetailViewController.swift in Sources */,
 				DCA6BE782224FEC5009A2CF1 /* HelpViewController.swift in Sources */,
 				DC4E06C222265DB700A69630 /* ToDoInjector.swift in Sources */,
 				DCA6BE7E2224FEE5009A2CF1 /* ToDoViewController.swift in Sources */,
-				DCC508342227DE7000804586 /* ToParentNavigationControllerPopResolver.swift in Sources */,
+				DCC508342227DE7000804586 /* ToParentNavigationControllerPopResolverAction.swift in Sources */,
 				DC4E06CE2226602500A69630 /* RootInjector.swift in Sources */,
 				DCA6BE932225004B009A2CF1 /* MessageCenterViewController.swift in Sources */,
-				DCC5082E2227DA9700804586 /* ToParentAppRouteRootResolver.swift in Sources */,
-				DCC508312227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolver.swift in Sources */,
+				DCC5082E2227DA9700804586 /* ToParentAppRouteRootResolverAction.swift in Sources */,
+				DCC508312227DBB700804586 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift in Sources */,
 				DC1F63882220BC63003842BB /* AppDelegate.swift in Sources */,
 				DCA6BE8C2224FFC7009A2CF1 /* ContactUsViewController.swift in Sources */,
-				DCA6BEA122251401009A2CF1 /* HelpToChildResolver.swift in Sources */,
 				DC4E06B82226593D00A69630 /* HelpInjector.swift in Sources */,
 				DCA6BE9A222512BC009A2CF1 /* RootToChildResolver.swift in Sources */,
 			);
@@ -696,18 +701,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC23ACE5222A70EB00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolverTests.swift in Sources */,
+				DC23ACE5222A70EB00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolverActionTests.swift in Sources */,
 				DC23ACE1222A70DB00A00D40 /* ToDoViewControllerTests.swift in Sources */,
 				DC23ACE3222A70E600A00D40 /* AppRouteTests.swift in Sources */,
-				DC23ACE4222A70EB00A00D40 /* ToChildUIStoryboardPresentModalResolverTests.swift in Sources */,
+				DC23ACE4222A70EB00A00D40 /* ToChildUIStoryboardPresentModalResolverActionTests.swift in Sources */,
+				DC1EDBCC222BD2D800646C13 /* ToChildSegueResolverAction.swift in Sources */,
 				DC23ACDA222A70BE00A00D40 /* MockViewController.swift in Sources */,
 				DC23ACC6222A703900A00D40 /* HelpInjector.swift in Sources */,
+				DC1EDBD0222BDAFA00646C13 /* RoutableCompleting.swift in Sources */,
 				DC23ACC7222A703900A00D40 /* HelpViewController.swift in Sources */,
 				DC23ACCA222A705700A00D40 /* RootViewController.swift in Sources */,
-				DC23ACE7222A70EB00A00D40 /* ToParentNavigationControllerPopResolverTests.swift in Sources */,
-				DC23ACD6222A707F00A00D40 /* ToParentAppRouteRootResolver.swift in Sources */,
+				DC23ACE7222A70EB00A00D40 /* ToParentNavigationControllerPopResolverActionTests.swift in Sources */,
+				DC23ACD6222A707F00A00D40 /* ToParentAppRouteRootResolverAction.swift in Sources */,
 				DC23ACC1222A700500A00D40 /* UINavigationController+Completion.swift in Sources */,
-				DC23ACD5222A707F00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolver.swift in Sources */,
+				DC23ACD5222A707F00A00D40 /* ToChildUIStoryboardNavigationControllerPushResolverAction.swift in Sources */,
 				DC23ACC4222A702C00A00D40 /* ContactUsInjector.swift in Sources */,
 				DC23ACDF222A70DB00A00D40 /* RootViewControllerTests.swift in Sources */,
 				DC23ACDC222A70C300A00D40 /* MockViewControllerRoutable.swift in Sources */,
@@ -720,20 +727,19 @@
 				DC23ACCD222A706300A00D40 /* MessageCenterViewController.swift in Sources */,
 				DC23ACC5222A702C00A00D40 /* ContactUsViewController.swift in Sources */,
 				DC23ACCC222A706300A00D40 /* MessageCenterInjector.swift in Sources */,
-				DC23ACD8222A707F00A00D40 /* ToParentNavigationControllerPopResolver.swift in Sources */,
+				DC23ACD8222A707F00A00D40 /* ToParentNavigationControllerPopResolverAction.swift in Sources */,
 				DC23ACD1222A707200A00D40 /* ToDoDetailInjector.swift in Sources */,
 				DC23ACD3222A707A00A00D40 /* AppRoute.swift in Sources */,
 				DC23ACD0222A706C00A00D40 /* ToDoViewController.swift in Sources */,
-				DC23ACD7222A707F00A00D40 /* ToParentDismissModalResolver.swift in Sources */,
-				DC23ACC8222A703900A00D40 /* HelpToChildResolver.swift in Sources */,
+				DC23ACD7222A707F00A00D40 /* ToParentDismissModalResolverAction.swift in Sources */,
 				DC08BCB9222B617900622493 /* UIViewControllerTestHelpers.swift in Sources */,
 				DC23ACCF222A706C00A00D40 /* ToDoTableViewManager.swift in Sources */,
 				DC08BCB8222B617900622493 /* BDDTestHelpers.swift in Sources */,
 				DC23ACDB222A70C300A00D40 /* MockViewControllerRoutableInjector.swift in Sources */,
 				DC23ACCE222A706C00A00D40 /* ToDoInjector.swift in Sources */,
 				DC08BCCF222B62B100622493 /* MockQTRouteDriver.swift in Sources */,
-				DC23ACD4222A707F00A00D40 /* ToChildUIStoryboardPresentModalResolver.swift in Sources */,
-				DC23ACE6222A70EB00A00D40 /* ToParentDismissModalResolverTests.swift in Sources */,
+				DC23ACD4222A707F00A00D40 /* ToChildUIStoryboardPresentModalResolverAction.swift in Sources */,
+				DC23ACE6222A70EB00A00D40 /* ToParentDismissModalResolverActionTests.swift in Sources */,
 				DC23ACD2222A707200A00D40 /* ToDoDetailViewController.swift in Sources */,
 				DC08BCD8222B62F700622493 /* QTRouteResolverTestHelpers.swift in Sources */,
 				DC23ACC9222A705700A00D40 /* RootInjector.swift in Sources */,

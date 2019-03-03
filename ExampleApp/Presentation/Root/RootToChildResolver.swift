@@ -30,9 +30,3 @@ func RootToChildResolver() -> QTRouteResolver.ActionType.ToChild {
         }
     }
 }
-
-func RootToParentResolver() -> QTRouteResolver.ActionType.ToParent {
-    return { _, _, _, _ in
-        assertionFailure("cannot route beyond root!")
-    }
-}

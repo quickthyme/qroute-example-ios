@@ -10,7 +10,7 @@ class ContactUsInjector: NSObject {
         viewController.routeResolver = QTRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.ContactUs)!,
             toChild: QTRouteResolver.DefaultAction.ToChildNoOp(),
-            toParent: ToParentDismissModalResolver()
+            toParent: ToParentDismissModalResolverAction()
         )
         viewController.routeDriver = AppRoute.driver
     }

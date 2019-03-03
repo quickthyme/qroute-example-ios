@@ -6,7 +6,6 @@ class HelpViewController: UIViewController, QTRoutable {
     var routeInput: QTRoutableInput?
     var routeResolver: QTRouteResolving?
     var routeDriver: QTRouteDriving?
-    var segueRouteCompletion: QTRoutableCompletion?
 
     @IBAction func messageCenterAction(_ sender: AnyObject?) {
         routeDriver?.driveTo(AppRoute.id.MessageCenter, from: self, input: nil,
@@ -21,8 +20,10 @@ class HelpViewController: UIViewController, QTRoutable {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let target = segue.destination as? QTRoutable {
-            segueRouteCompletion?(target)
-        }
+        guard
+            let target = segue.destination as? QTRoutable,
+            let completer = sender as? RoutableCompleting
+            else { return }
+        completer.complete(target)
     }
 }

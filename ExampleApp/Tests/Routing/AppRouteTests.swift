@@ -9,7 +9,7 @@ class AppRouteTests: XCTestCase {
                 let expectedNumberOfRoutes = 6
                 XCTAssertEqual(routePlan.flattened.count, expectedNumberOfRoutes)
             }
-            then("description length matches last verified snapshot") {
+            then("description length matches last verified length") {
                 XCTAssertEqual(routePlan.debugDescription.lengthOfBytes(using: .utf8), 123)
             }
         }

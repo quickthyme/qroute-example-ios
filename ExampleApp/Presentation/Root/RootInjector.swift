@@ -10,7 +10,7 @@ class RootInjector: NSObject {
         viewController.routeResolver = QTRouteResolver(
             AppRoute.plan,
             toChild: RootToChildResolver(),
-            toParent: RootToParentResolver()
+            toParent: QTRouteResolver.DefaultAction.ToParentNoOp()
         )
         viewController.routeDriver = AppRoute.driver
 

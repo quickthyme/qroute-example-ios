@@ -9,8 +9,8 @@ class MessageCenterInjector: NSObject {
         super.awakeFromNib()
         viewController.routeResolver = QTRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.MessageCenter)!,
-            toChild: ToChildUIStoryboardNavigationControllerPushResolver(),
-            toParent: ToParentNavigationControllerPopResolver()
+            toChild: ToChildUIStoryboardNavigationControllerPushResolverAction(),
+            toParent: ToParentNavigationControllerPopResolverAction()
         )
         viewController.routeDriver = AppRoute.driver
     }

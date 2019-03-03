@@ -3,9 +3,10 @@ import XCTest
 import UIKit
 import QTRoute
 
-class ToParentNavigationControllerPopResolverTests: XCTestCase {
+class ToParentNavigationControllerPopResolverActionTests: XCTestCase {
 
-    let subject: QTRouteResolver.ActionType.ToParent = ToParentNavigationControllerPopResolver()
+    let subject: QTRouteResolver.ActionType.ToParent =
+        ToParentNavigationControllerPopResolverAction()
 
     func test_resolve() {
 

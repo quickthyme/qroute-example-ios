@@ -2,7 +2,7 @@
 import UIKit
 import QTRoute
 
-func ToParentDismissModalResolver() -> QTRouteResolver.ActionType.ToParent {
+func ToParentDismissModalResolverAction() -> QTRouteResolver.ActionType.ToParent {
     return {
         from, input, animated, completion in
 

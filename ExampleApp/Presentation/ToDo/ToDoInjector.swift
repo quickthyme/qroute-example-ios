@@ -9,8 +9,8 @@ class ToDoInjector: NSObject {
         super.awakeFromNib()
         viewController.routeResolver = QTRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.ToDo)!,
-            toChild: ToChildUIStoryboardNavigationControllerPushResolver(),
-            toParent: ToParentAppRouteRootResolver()
+            toChild: ToChildUIStoryboardNavigationControllerPushResolverAction(),
+            toParent: ToParentAppRouteRootResolverAction()
         )
         viewController.routeDriver = AppRoute.driver
     }
