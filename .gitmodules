@@ -1,0 +1,3 @@
+[submodule "submodule/qtroute"]
+	path = submodule/qtroute
+	url = git@github.com:quickthyme/qtroute.git
