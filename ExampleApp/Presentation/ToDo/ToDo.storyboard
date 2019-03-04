@@ -21,9 +21,31 @@
                             <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="66" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FmN-0P-Z5i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="gTc-M3-EBy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where to begin..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyP-6d-jMi">
+                                            <rect key="frame" x="42" y="53" width="163" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="oLK-Ok-i7z">
+                                            <rect key="frame" x="12" y="56" width="24" height="24"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="oLK-Ok-i7z" firstAttribute="leading" secondItem="gTc-M3-EBy" secondAttribute="leading" constant="12" id="C3Y-eI-fom"/>
+                                        <constraint firstAttribute="bottom" secondItem="kyP-6d-jMi" secondAttribute="bottom" constant="8" id="DsK-Be-oFL"/>
+                                        <constraint firstAttribute="bottom" secondItem="oLK-Ok-i7z" secondAttribute="bottom" constant="8" id="Trg-Re-ApZ"/>
+                                        <constraint firstItem="kyP-6d-jMi" firstAttribute="leading" secondItem="oLK-Ok-i7z" secondAttribute="trailing" constant="6" id="z1M-dz-XNa"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellReuseIdentifier" textLabel="tkx-lo-YpZ" style="IBUITableViewCellStyleDefault" id="vnP-FN-K35">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="66"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vnP-FN-K35" id="jmJ-rb-ZHq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
@@ -73,4 +95,7 @@
             <point key="canvasLocation" x="406" y="-323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon.png" width="24" height="24"/>
+    </resources>
 </document>

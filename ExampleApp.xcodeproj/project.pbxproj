@@ -10,8 +10,6 @@
 		DC08BCB4222B613B00622493 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC08BCB3222B613B00622493 /* icon.png */; };
 		DC08BCB8222B617900622493 /* BDDTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCB6222B617900622493 /* BDDTestHelpers.swift */; };
 		DC08BCB9222B617900622493 /* UIViewControllerTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCB7222B617900622493 /* UIViewControllerTestHelpers.swift */; };
-		DC08BCC5222B61DD00622493 /* libQTRoute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC08BCC0222B61B800622493 /* libQTRoute.a */; };
-		DC08BCC8222B620600622493 /* libQTRoute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC08BCC0222B61B800622493 /* libQTRoute.a */; };
 		DC08BCCF222B62B100622493 /* MockQTRouteDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCCA222B62B100622493 /* MockQTRouteDriver.swift */; };
 		DC08BCD2222B62B100622493 /* MockQTRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCCD222B62B100622493 /* MockQTRoutable.swift */; };
 		DC08BCD8222B62F700622493 /* QTRouteResolverTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BCD6222B62F700622493 /* QTRouteResolverTestHelpers.swift */; };
@@ -72,6 +70,8 @@
 		DC4E06C822265F2000A69630 /* MessageCenterInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06C622265F2000A69630 /* MessageCenterInjector.swift */; };
 		DC4E06CE2226602500A69630 /* RootInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E06CC2226602500A69630 /* RootInjector.swift */; };
 		DC4E06D3222678B000A69630 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DC4E06D2222678B000A69630 /* README.md */; };
+		DCA13150222CB61800531824 /* libQTRoute-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC08BCC0222B61B800622493 /* libQTRoute-iOS.a */; };
+		DCA13153222CB62C00531824 /* libQTRoute-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC08BCC0222B61B800622493 /* libQTRoute-iOS.a */; };
 		DCA6BE752224FEA6009A2CF1 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA6BE742224FEA6009A2CF1 /* Help.storyboard */; };
 		DCA6BE782224FEC5009A2CF1 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6BE772224FEC5009A2CF1 /* HelpViewController.swift */; };
 		DCA6BE7B2224FED3009A2CF1 /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA6BE7A2224FED3009A2CF1 /* ToDo.storyboard */; };
@@ -113,19 +113,54 @@
 			remoteGlobalIDString = DCE8367E2221C32F00E714F8;
 			remoteInfo = QTRouteTests;
 		};
-		DC08BCC3222B61D800622493 /* PBXContainerItemProxy */ = {
+		DCA13144222CB60600531824 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DC23AC57222A56AE00A00D40;
-			remoteInfo = QTRoute;
+			proxyType = 2;
+			remoteGlobalIDString = DC70C82E222CA73B0068CCB6;
+			remoteInfo = "QTRoute-macOS";
 		};
-		DC08BCC6222B620100622493 /* PBXContainerItemProxy */ = {
+		DCA13146222CB60600531824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC70C874222CAA6E0068CCB6;
+			remoteInfo = "QTRoute-tvOS";
+		};
+		DCA13148222CB60600531824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC70C860222CA9D20068CCB6;
+			remoteInfo = "QTRoute-watchOS";
+		};
+		DCA1314A222CB60600531824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC70C844222CA8960068CCB6;
+			remoteInfo = "QTRoute-macOSTests";
+		};
+		DCA1314C222CB60600531824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC70C888222CAAD40068CCB6;
+			remoteInfo = "QTRoute-tvOSTests";
+		};
+		DCA1314E222CB60E00531824 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = DC23AC57222A56AE00A00D40;
-			remoteInfo = QTRoute;
+			remoteInfo = "QTRoute-iOS";
+		};
+		DCA13151222CB62500531824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC08BCBA222B61B800622493 /* QTRoute.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC23AC57222A56AE00A00D40;
+			remoteInfo = "QTRoute-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -199,7 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC08BCC5222B61DD00622493 /* libQTRoute.a in Frameworks */,
+				DCA13150222CB61800531824 /* libQTRoute-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC08BCC8222B620600622493 /* libQTRoute.a in Frameworks */,
+				DCA13153222CB62C00531824 /* libQTRoute-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +270,13 @@
 		DC08BCBB222B61B800622493 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC08BCC0222B61B800622493 /* libQTRoute.a */,
-				DC08BCC2222B61B800622493 /* QTRouteTests.xctest */,
+				DC08BCC0222B61B800622493 /* libQTRoute-iOS.a */,
+				DCA13145222CB60600531824 /* libQTRoute-macOS.a */,
+				DCA13147222CB60600531824 /* libQTRoute-tvOS.a */,
+				DCA13149222CB60600531824 /* libQTRoute-watchOS.a */,
+				DC08BCC2222B61B800622493 /* QTRoute-iOSTests.xctest */,
+				DCA1314B222CB60600531824 /* QTRoute-macOSTests.xctest */,
+				DCA1314D222CB60600531824 /* QTRoute-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -545,7 +585,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DC08BCC4222B61D800622493 /* PBXTargetDependency */,
+				DCA1314F222CB60E00531824 /* PBXTargetDependency */,
 			);
 			name = ExampleApp;
 			productName = QTroute;
@@ -563,7 +603,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DC08BCC7222B620100622493 /* PBXTargetDependency */,
+				DCA13152222CB62500531824 /* PBXTargetDependency */,
 			);
 			name = ExampleAppTests;
 			productName = ExampleAppTests;
@@ -614,18 +654,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DC08BCC0222B61B800622493 /* libQTRoute.a */ = {
+		DC08BCC0222B61B800622493 /* libQTRoute-iOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libQTRoute.a;
+			path = "libQTRoute-iOS.a";
 			remoteRef = DC08BCBF222B61B800622493 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DC08BCC2222B61B800622493 /* QTRouteTests.xctest */ = {
+		DC08BCC2222B61B800622493 /* QTRoute-iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = QTRouteTests.xctest;
+			path = "QTRoute-iOSTests.xctest";
 			remoteRef = DC08BCC1222B61B800622493 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCA13145222CB60600531824 /* libQTRoute-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libQTRoute-macOS.a";
+			remoteRef = DCA13144222CB60600531824 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCA13147222CB60600531824 /* libQTRoute-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libQTRoute-tvOS.a";
+			remoteRef = DCA13146222CB60600531824 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCA13149222CB60600531824 /* libQTRoute-watchOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libQTRoute-watchOS.a";
+			remoteRef = DCA13148222CB60600531824 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCA1314B222CB60600531824 /* QTRoute-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QTRoute-macOSTests.xctest";
+			remoteRef = DCA1314A222CB60600531824 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCA1314D222CB60600531824 /* QTRoute-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QTRoute-tvOSTests.xctest";
+			remoteRef = DCA1314C222CB60600531824 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -752,15 +827,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC08BCC4222B61D800622493 /* PBXTargetDependency */ = {
+		DCA1314F222CB60E00531824 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = QTRoute;
-			targetProxy = DC08BCC3222B61D800622493 /* PBXContainerItemProxy */;
+			name = "QTRoute-iOS";
+			targetProxy = DCA1314E222CB60E00531824 /* PBXContainerItemProxy */;
 		};
-		DC08BCC7222B620100622493 /* PBXTargetDependency */ = {
+		DCA13152222CB62500531824 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = QTRoute;
-			targetProxy = DC08BCC6222B620100622493 /* PBXContainerItemProxy */;
+			name = "QTRoute-iOS";
+			targetProxy = DCA13151222CB62500531824 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -913,7 +988,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.quickthyme.qtroute.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -930,7 +1005,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.quickthyme.qtroute.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

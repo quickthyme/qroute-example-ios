@@ -34,6 +34,20 @@
                ReferencedContainer = "container:ExampleApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DCE8367D2221C32F00E714F8"
+               BuildableName = "QTRoute-iOSTests.xctest"
+               BlueprintName = "QTRoute-iOSTests"
+               ReferencedContainer = "container:submodule/qtroute/QTRoute.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -54,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCE8367D2221C32F00E714F8"
-            BuildableName = "QTRouteTests.xctest"
-            BlueprintName = "QTRouteTests"
-            ReferencedContainer = "container:QTRoute.xcodeproj">
+            BuildableName = "QTRoute-iOSTests.xctest"
+            BlueprintName = "QTRoute-iOSTests"
+            ReferencedContainer = "container:submodule/qtroute/QTRoute.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -75,9 +89,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DCE8367D2221C32F00E714F8"
-               BuildableName = "QTRouteTests.xctest"
-               BlueprintName = "QTRouteTests"
-               ReferencedContainer = "container:QTRoute.xcodeproj">
+               BuildableName = "QTRoute-iOSTests.xctest"
+               BlueprintName = "QTRoute-iOSTests"
+               ReferencedContainer = "container:submodule/qtroute/QTRoute.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
