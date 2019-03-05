@@ -1,14 +1,14 @@
 
 import XCTest
-import QTRoute
+import QRoute
 
 class RootViewControllerTests: XCTestCase {
 
     var subject: RootViewController!
-    var mockRouteDriver: MockQTRouteDriver!
+    var mockRouteDriver: MockQRouteDriver!
 
     override func setUp() {
-        mockRouteDriver = MockQTRouteDriver()
+        mockRouteDriver = MockQRouteDriver()
         subject = (StoryboardLoader.loadViewController(from: "Root") as! RootViewController)
         subject.routeDriver = mockRouteDriver
     }

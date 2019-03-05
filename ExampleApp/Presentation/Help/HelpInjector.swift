@@ -1,6 +1,6 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
 class HelpInjector: NSObject {
     @IBOutlet weak var viewController: HelpViewController!
@@ -12,10 +12,10 @@ class HelpInjector: NSObject {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewController.routeResolver = QTRouteResolver(
+        viewController.routeResolver = QRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.Help)!,
 
-            toChild: QTRouteResolver.DefaultAction.ToChildKeyed([
+            toChild: QRouteResolver.DefaultAction.ToChildKeyed([
                 AppRoute.id.ContactUs: ToChildSegueResolverAction(segueId: SegueId.ToContactUs),
                 AppRoute.id.MessageCenter: ToChildSegueResolverAction(segueId: SegueId.ToMessageCenter)
                 ]),

@@ -1,11 +1,11 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-class RootViewController: UIViewController, QTRoutable {
-    var routeInput: QTRoutableInput?
-    var routeResolver: QTRouteResolving?
-    var routeDriver: QTRouteDriving?
+class RootViewController: UIViewController, QRoutable {
+    var routeInput: QRoutableInput?
+    var routeResolver: QRouteResolving?
+    var routeDriver: QRouteDriving?
 
     var rootTabBarController: UITabBarController?
 

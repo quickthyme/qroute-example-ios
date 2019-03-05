@@ -1,12 +1,12 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-class ToDoDetailViewController: UIViewController, QTRoutable {
-    var routeResolver: QTRouteResolving?
-    var routeDriver: QTRouteDriving?
+class ToDoDetailViewController: UIViewController, QRoutable {
+    var routeResolver: QRouteResolving?
+    var routeDriver: QRouteDriving?
 
-    var routeInput: QTRoutableInput? {
+    var routeInput: QRoutableInput? {
         didSet {
             self.navigationItem.title = "Item \(routeInput?["toDoId"] as? Int ?? -1)"
         }

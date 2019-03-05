@@ -1,5 +1,5 @@
 
-import QTRoute
+import QRoute
 
 class AppRoute {
 
@@ -12,16 +12,16 @@ class AppRoute {
         static let MessageCenter = "MessageCenter"
     }
 
-    static var plan: QTRoute =
-        QTRoute(id.Root,
-                QTRoute(id.ToDo,
-                        QTRoute(id.ToDoDetail,
+    static var plan: QRoute =
+        QRoute(id.Root,
+                QRoute(id.ToDo,
+                        QRoute(id.ToDoDetail,
                                 dependencies: ["toDoId"])),
-                QTRoute(id.Help,
-                        QTRoute(id.ContactUs),
-                        QTRoute(id.MessageCenter)))
+                QRoute(id.Help,
+                        QRoute(id.ContactUs),
+                        QRoute(id.MessageCenter)))
 
-    static var driver: QTRouteDriving? = QTRouteDriver()
+    static var driver: QRouteDriving? = QRouteDriver()
 
     static weak var rootRoutable: RootViewController? = nil
 }

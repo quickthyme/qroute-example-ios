@@ -1,8 +1,8 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-func ToParentDismissModalResolverAction() -> QTRouteResolver.ActionType.ToParent {
+func ToParentDismissModalResolverAction() -> QRouteResolver.ActionType.ToParent {
     return {
         from, input, animated, completion in
 
@@ -13,8 +13,8 @@ func ToParentDismissModalResolverAction() -> QTRouteResolver.ActionType.ToParent
 
         presenter.dismiss(animated: animated) {
 
-            if let routable = presenter as? QTRoutable {
-                QTRouteResolver.mergeInputDependencies(target: routable, input: input)
+            if let routable = presenter as? QRoutable {
+                QRouteResolver.mergeInputDependencies(target: routable, input: input)
                 completion(routable)
             }
         }

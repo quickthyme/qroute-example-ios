@@ -1,14 +1,14 @@
 
 import XCTest
-import QTRoute
+import QRoute
 
 class MessageCenterViewControllerTests: XCTestCase {
 
     var subject: MessageCenterViewController!
-    var mockRouteDriver: MockQTRouteDriver!
+    var mockRouteDriver: MockQRouteDriver!
 
     override func setUp() {
-        mockRouteDriver = MockQTRouteDriver()
+        mockRouteDriver = MockQRouteDriver()
         subject = (StoryboardLoader.loadViewController(from: "MessageCenter") as! MessageCenterViewController)
         subject.routeDriver = mockRouteDriver
     }

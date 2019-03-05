@@ -1,13 +1,13 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-private let RouteTab: [QTRouteId:Int] = [
+private let RouteTab: [QRouteId:Int] = [
     AppRoute.id.ToDo:0,
     AppRoute.id.Help:1
 ]
 
-func RootToChildResolver() -> QTRouteResolver.ActionType.ToChild {
+func RootToChildResolver() -> QRouteResolver.ActionType.ToChild {
     return {
         route, from, input, animated, completion in
 
@@ -22,8 +22,8 @@ func RootToChildResolver() -> QTRouteResolver.ActionType.ToChild {
         if let navWrapper = rootTabBarController.selectedViewController as? UINavigationController {
             navWrapper.popToRootViewController(animated: animated) {
 
-                if let routable = navWrapper.topViewController as? QTRoutable {
-                    QTRouteResolver.mergeInputDependencies(target: routable, input: input)
+                if let routable = navWrapper.topViewController as? QRoutable {
+                    QRouteResolver.mergeInputDependencies(target: routable, input: input)
                     completion(routable)
                 }
             }

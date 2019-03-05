@@ -1,18 +1,18 @@
 
 import XCTest
 import UIKit
-import QTRoute
+import QRoute
 
 class ToParentNavigationControllerPopResolverActionTests: XCTestCase {
 
-    let subject: QTRouteResolver.ActionType.ToParent =
+    let subject: QRouteResolver.ActionType.ToParent =
         ToParentNavigationControllerPopResolverAction()
 
     func test_resolve() {
 
         given("parent child routables in a navigation controller") {
-            let childRoute = QTRoute("presented")
-            let parentRoute = QTRoute("presenter", childRoute)
+            let childRoute = QRoute("presented")
+            let parentRoute = QRoute("presenter", childRoute)
             let child = MockViewControllerRoutable(childRoute)
             let parent = MockViewControllerRoutable(parentRoute).inMockNavigationController
             let mockNavigationController = parent.mockNavigationController!

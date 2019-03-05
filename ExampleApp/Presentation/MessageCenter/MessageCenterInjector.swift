@@ -1,13 +1,13 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
 class MessageCenterInjector: NSObject {
     @IBOutlet weak var viewController: MessageCenterViewController!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewController.routeResolver = QTRouteResolver(
+        viewController.routeResolver = QRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.MessageCenter)!,
             toChild: ToChildUIStoryboardNavigationControllerPushResolverAction(),
             toParent: ToParentNavigationControllerPopResolverAction()

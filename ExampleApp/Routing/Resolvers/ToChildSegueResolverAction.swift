@@ -1,8 +1,8 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-func ToChildSegueResolverAction(segueId: String) -> QTRouteResolver.ActionType.ToChild {
+func ToChildSegueResolverAction(segueId: String) -> QRouteResolver.ActionType.ToChild {
     return { route, from, input, animated, completion in
         guard let vc = from as? UIViewController else { return }
         let completer = RoutableCompleter(completion)

@@ -1,16 +1,16 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-func ToChildUIStoryboardNavigationControllerPushResolverAction() -> QTRouteResolver.ActionType.ToChild {
+func ToChildUIStoryboardNavigationControllerPushResolverAction() -> QRouteResolver.ActionType.ToChild {
     return { route, from, input, animated, completion in
         guard
             let fromVC = from as? UIViewController,
             let vc = StoryboardLoader.loadViewController(from: route.id),
-            let vcRoutable = vc as? QTRoutable
+            let vcRoutable = vc as? QRoutable
             else { return }
 
-        QTRouteResolver.mergeInputDependencies(target: vcRoutable, input: input)
+        QRouteResolver.mergeInputDependencies(target: vcRoutable, input: input)
         fromVC.navigationController?.pushViewController(vc, animated: animated, completion: {
             completion(vcRoutable)
         })

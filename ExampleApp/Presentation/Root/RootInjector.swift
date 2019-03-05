@@ -1,16 +1,16 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
 class RootInjector: NSObject {
     @IBOutlet weak var viewController: RootViewController!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewController.routeResolver = QTRouteResolver(
+        viewController.routeResolver = QRouteResolver(
             AppRoute.plan,
             toChild: RootToChildResolver(),
-            toParent: QTRouteResolver.DefaultAction.ToParentNoOp()
+            toParent: QRouteResolver.DefaultAction.ToParentNoOp()
         )
         viewController.routeDriver = AppRoute.driver
 

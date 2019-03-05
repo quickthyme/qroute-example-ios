@@ -1,18 +1,18 @@
 
 import XCTest
 import UIKit
-import QTRoute
+import QRoute
 
 class ToParentDismissModalResolverActionTests: XCTestCase {
 
-    let subject: QTRouteResolver.ActionType.ToParent =
+    let subject: QRouteResolver.ActionType.ToParent =
         ToParentDismissModalResolverAction()
 
     func test_resolve() {
 
         given("routable is being presented") {
-            let presentedRoute = QTRoute("presented")
-            let presenterRoute = QTRoute("presenter", presentedRoute)
+            let presentedRoute = QRoute("presented")
+            let presenterRoute = QRoute("presenter", presentedRoute)
             let presented = MockViewControllerRoutable(presentedRoute)
             let presenter = MockViewControllerRoutable(presenterRoute)
 

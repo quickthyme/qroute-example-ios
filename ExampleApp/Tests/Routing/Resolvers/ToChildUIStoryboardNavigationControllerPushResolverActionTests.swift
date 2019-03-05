@@ -1,13 +1,13 @@
 
 import XCTest
 import UIKit
-import QTRoute
+import QRoute
 
 class ToChildUIStoryboardNavigationControllerPushResolverActionTests: XCTestCase {
 
-    let subject: QTRouteResolver.ActionType.ToChild =
+    let subject: QRouteResolver.ActionType.ToChild =
         ToChildUIStoryboardNavigationControllerPushResolverAction()
-    let inputStream: QTRoutableInput = [
+    let inputStream: QRoutableInput = [
         "somethingForSusan":"123.45.678.910.11.12",
         "somethingForBruce":[1,-1]
     ]
@@ -15,8 +15,8 @@ class ToChildUIStoryboardNavigationControllerPushResolverActionTests: XCTestCase
     func test_resolve() {
 
         given("source, target, inputStream, animated, completion") {
-            let target = QTRoute("MockViewControllerRoutable")
-            let mockRoutable = MockViewControllerRoutable(QTRoute("source", target))
+            let target = QRoute("MockViewControllerRoutable")
+            let mockRoutable = MockViewControllerRoutable(QRoute("source", target))
                 .inMockNavigationController
 
             when("executed") {

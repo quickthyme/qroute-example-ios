@@ -1,8 +1,8 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-func ToParentNavigationControllerPopResolverAction() -> QTRouteResolver.ActionType.ToParent {
+func ToParentNavigationControllerPopResolverAction() -> QRouteResolver.ActionType.ToParent {
     return {
         from, input, animated, completion in
 
@@ -11,8 +11,8 @@ func ToParentNavigationControllerPopResolverAction() -> QTRouteResolver.ActionTy
 
         navController.popViewController(animated: animated) {
 
-            if let parent = navController.topViewController as? QTRoutable {
-                QTRouteResolver.mergeInputDependencies(target: parent, input: input)
+            if let parent = navController.topViewController as? QRoutable {
+                QRouteResolver.mergeInputDependencies(target: parent, input: input)
                 completion(parent)
             }
         }

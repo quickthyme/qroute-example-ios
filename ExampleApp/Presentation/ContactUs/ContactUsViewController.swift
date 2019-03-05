@@ -1,11 +1,11 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-class ContactUsViewController: UIViewController, QTRoutable {
-    var routeInput: QTRoutableInput?
-    var routeResolver: QTRouteResolving?
-    var routeDriver: QTRouteDriving?
+class ContactUsViewController: UIViewController, QRoutable {
+    var routeInput: QRoutableInput?
+    var routeResolver: QRouteResolving?
+    var routeDriver: QRouteDriving?
 
     @IBAction func dismissAction(_ sender: AnyObject?) {
         routeDriver?.driveParent(from: self, input: nil,

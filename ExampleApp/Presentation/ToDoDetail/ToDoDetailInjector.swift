@@ -1,13 +1,13 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
 class ToDoDetailInjector: NSObject {
     @IBOutlet weak var viewController: ToDoDetailViewController!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewController.routeResolver = QTRouteResolver(
+        viewController.routeResolver = QRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.ToDoDetail)!,
             toChild: ToChildUIStoryboardPresentModalResolverAction(),
             toParent: ToParentNavigationControllerPopResolverAction()

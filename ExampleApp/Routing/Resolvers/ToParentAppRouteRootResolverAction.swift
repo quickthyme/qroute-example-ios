@@ -1,7 +1,7 @@
 
-import QTRoute
+import QRoute
 
-func ToParentAppRouteRootResolverAction() -> QTRouteResolver.ActionType.ToParent {
+func ToParentAppRouteRootResolverAction() -> QRouteResolver.ActionType.ToParent {
     return {
         from, input, animated, completion in
         guard let parent = AppRoute.rootRoutable else { return /* abort */ }

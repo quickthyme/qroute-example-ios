@@ -1,14 +1,14 @@
 
 import XCTest
-import QTRoute
+import QRoute
 
 class ToDoDetailViewControllerTests: XCTestCase {
 
     var subject: ToDoDetailViewController!
-    var mockRouteDriver: MockQTRouteDriver!
+    var mockRouteDriver: MockQRouteDriver!
 
     override func setUp() {
-        mockRouteDriver = MockQTRouteDriver()
+        mockRouteDriver = MockQRouteDriver()
         subject = (StoryboardLoader.loadViewController(from: "ToDoDetail") as! ToDoDetailViewController)
         subject.routeDriver = mockRouteDriver
     }

@@ -1,15 +1,15 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-class MockViewControllerRoutable: MockViewController, QTRoutable {
+class MockViewControllerRoutable: MockViewController, QRoutable {
 
-    var routeInput: QTRoutableInput?
-    var routeResolver: QTRouteResolving?
+    var routeInput: QRoutableInput?
+    var routeResolver: QRouteResolving?
 
-    init(_ route: QTRoute? = nil) {
+    init(_ route: QRoute? = nil) {
         super.init(nibName: nil, bundle: nil)
-        self.routeResolver = MockQTRouteResolver(route ?? QTRoute("\(type(of: self))"))
+        self.routeResolver = MockQRouteResolver(route ?? QRoute("\(type(of: self))"))
     }
 
     required init?(coder aDecoder: NSCoder) {

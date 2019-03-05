@@ -1,11 +1,11 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
-class MessageCenterViewController: UIViewController, QTRoutable {
-    var routeInput: QTRoutableInput?
-    var routeResolver: QTRouteResolving?
-    var routeDriver: QTRouteDriving?
+class MessageCenterViewController: UIViewController, QRoutable {
+    var routeInput: QRoutableInput?
+    var routeResolver: QRouteResolving?
+    var routeDriver: QRouteDriving?
 
     @IBAction func playAction(_ sender: AnyObject?) {
         routeDriver?.driveSub(routeResolver!.route.id, from: self, input: nil,

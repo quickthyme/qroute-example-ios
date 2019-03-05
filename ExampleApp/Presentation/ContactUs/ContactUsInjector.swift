@@ -1,15 +1,15 @@
 
 import UIKit
-import QTRoute
+import QRoute
 
 class ContactUsInjector: NSObject {
     @IBOutlet weak var viewController: ContactUsViewController!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewController.routeResolver = QTRouteResolver(
+        viewController.routeResolver = QRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.ContactUs)!,
-            toChild: QTRouteResolver.DefaultAction.ToChildNoOp(),
+            toChild: QRouteResolver.DefaultAction.ToChildNoOp(),
             toParent: ToParentDismissModalResolverAction()
         )
         viewController.routeDriver = AppRoute.driver
