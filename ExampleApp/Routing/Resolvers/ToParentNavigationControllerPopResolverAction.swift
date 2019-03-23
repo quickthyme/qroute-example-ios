@@ -12,7 +12,7 @@ func ToParentNavigationControllerPopResolverAction() -> QRouteResolver.ActionTyp
         navController.popViewController(animated: animated) {
 
             if let parent = navController.topViewController as? QRoutable {
-                QRouteResolver.mergeInputDependencies(target: parent, input: input)
+                QRouteResolver.mergeInputDependencies(resolver: parent.routeResolver, input: input)
                 completion(parent)
             }
         }

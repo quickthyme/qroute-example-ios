@@ -14,7 +14,7 @@ func ToParentDismissModalResolverAction() -> QRouteResolver.ActionType.ToParent 
         presenter.dismiss(animated: animated) {
 
             if let routable = presenter as? QRoutable {
-                QRouteResolver.mergeInputDependencies(target: routable, input: input)
+                QRouteResolver.mergeInputDependencies(resolver: routable.routeResolver, input: input)
                 completion(routable)
             }
         }

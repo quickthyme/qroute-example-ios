@@ -3,8 +3,7 @@ import UIKit
 import QRoute
 
 class HelpViewController: UIViewController, QRoutable {
-    var routeInput: QRoutableInput?
-    var routeResolver: QRouteResolving?
+    var routeResolver: QRouteResolving!
     var routeDriver: QRouteDriving?
 
     @IBAction func messageCenterAction(_ sender: AnyObject?) {

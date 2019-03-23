@@ -7,7 +7,7 @@ class ToChildUIStoryboardNavigationControllerPushResolverActionTests: XCTestCase
 
     let subject: QRouteResolver.ActionType.ToChild =
         ToChildUIStoryboardNavigationControllerPushResolverAction()
-    let inputStream: QRoutableInput = [
+    let inputStream: QRouteResolving.Input = [
         "somethingForSusan":"123.45.678.910.11.12",
         "somethingForBruce":[1,-1]
     ]

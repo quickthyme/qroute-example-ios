@@ -21,7 +21,7 @@ class AppRoute {
                         QRoute(id.ContactUs),
                         QRoute(id.MessageCenter)))
 
-    static var driver: QRouteDriving? = QRouteDriver()
+    static var driver: QRouteDriving? = QRouteWalkingDriver()
 
     static weak var rootRoutable: RootViewController? = nil
 }

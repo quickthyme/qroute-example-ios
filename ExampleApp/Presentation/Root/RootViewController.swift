@@ -3,8 +3,7 @@ import UIKit
 import QRoute
 
 class RootViewController: UIViewController, QRoutable {
-    var routeInput: QRoutableInput?
-    var routeResolver: QRouteResolving?
+    var routeResolver: QRouteResolving!
     var routeDriver: QRouteDriving?
 
     var rootTabBarController: UITabBarController?

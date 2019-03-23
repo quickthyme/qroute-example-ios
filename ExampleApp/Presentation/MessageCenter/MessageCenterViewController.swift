@@ -3,12 +3,11 @@ import UIKit
 import QRoute
 
 class MessageCenterViewController: UIViewController, QRoutable {
-    var routeInput: QRoutableInput?
-    var routeResolver: QRouteResolving?
+    var routeResolver: QRouteResolving!
     var routeDriver: QRouteDriving?
 
     @IBAction func playAction(_ sender: AnyObject?) {
-        routeDriver?.driveSub(routeResolver!.route.id, from: self, input: nil,
+        routeDriver?.driveSub(routeResolver.route.id, from: self, input: nil,
                               animated: true,
                               completion: nil)
     }

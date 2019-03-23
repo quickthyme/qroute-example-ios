@@ -10,7 +10,8 @@ func ToChildUIStoryboardPresentModalResolverAction() -> QRouteResolver.ActionTyp
             let vcRoutable = vc as? QRoutable
             else { return }
 
-        QRouteResolver.mergeInputDependencies(target: vcRoutable, input: input)
+        QRouteResolver.mergeInputDependencies(resolver: vcRoutable.routeResolver,
+                                              input: input)
         fromVC.present(vc, animated: animated) {
             completion(vcRoutable)
         }

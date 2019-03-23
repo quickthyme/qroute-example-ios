@@ -10,7 +10,7 @@ func ToChildUIStoryboardNavigationControllerPushResolverAction() -> QRouteResolv
             let vcRoutable = vc as? QRoutable
             else { return }
 
-        QRouteResolver.mergeInputDependencies(target: vcRoutable, input: input)
+        QRouteResolver.mergeInputDependencies(resolver: vcRoutable.routeResolver, input: input)
         fromVC.navigationController?.pushViewController(vc, animated: animated, completion: {
             completion(vcRoutable)
         })

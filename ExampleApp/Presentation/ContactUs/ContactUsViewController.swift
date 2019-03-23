@@ -3,8 +3,7 @@ import UIKit
 import QRoute
 
 class ContactUsViewController: UIViewController, QRoutable {
-    var routeInput: QRoutableInput?
-    var routeResolver: QRouteResolving?
+    var routeResolver: QRouteResolving!
     var routeDriver: QRouteDriving?
 
     @IBAction func dismissAction(_ sender: AnyObject?) {

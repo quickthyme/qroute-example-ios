@@ -6,9 +6,9 @@ protocol RoutableCompleting {
 }
 
 class RoutableCompleter: RoutableCompleting {
-    let completion: QRoutableCompletion
+    let completion: QRouteResolving.Completion
 
-    init(_ completion: @escaping QRoutableCompletion) {
+    init(_ completion: @escaping QRouteResolving.Completion) {
         self.completion = completion
     }
 

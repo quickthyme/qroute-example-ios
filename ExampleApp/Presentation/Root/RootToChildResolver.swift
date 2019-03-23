@@ -23,7 +23,8 @@ func RootToChildResolver() -> QRouteResolver.ActionType.ToChild {
             navWrapper.popToRootViewController(animated: animated) {
 
                 if let routable = navWrapper.topViewController as? QRoutable {
-                    QRouteResolver.mergeInputDependencies(target: routable, input: input)
+                    QRouteResolver.mergeInputDependencies(resolver: routable.routeResolver,
+                                                          input: input)
                     completion(routable)
                 }
             }

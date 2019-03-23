@@ -15,7 +15,7 @@ class ToDoDetailViewControllerTests: XCTestCase {
 
     func test_configuration_and_events() {
         given("it has route input with 'toDoId' set") {
-            subject.routeInput = ["toDoId":88]
+            subject.routeResolver.input = ["toDoId":88]
 
             given_view_controller_has_been_presented(subject) {
 

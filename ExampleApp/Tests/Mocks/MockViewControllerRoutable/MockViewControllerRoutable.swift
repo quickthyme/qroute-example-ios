@@ -4,8 +4,7 @@ import QRoute
 
 class MockViewControllerRoutable: MockViewController, QRoutable {
 
-    var routeInput: QRoutableInput?
-    var routeResolver: QRouteResolving?
+    var routeResolver: QRouteResolving!
 
     init(_ route: QRoute? = nil) {
         super.init(nibName: nil, bundle: nil)
