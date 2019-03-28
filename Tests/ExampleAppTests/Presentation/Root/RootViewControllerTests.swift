@@ -9,7 +9,9 @@ class RootViewControllerTests: XCTestCase {
 
     override func setUp() {
         mockRouteDriver = MockQRouteDriver()
-        subject = (StoryboardLoader.loadViewController(from: "Root") as! RootViewController)
+        subject = (StoryboardLoader
+            .loadViewController("RootViewController",
+                                from: "Root") as! RootViewController)
         subject.routeDriver = mockRouteDriver
     }
 

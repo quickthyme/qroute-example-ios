@@ -15,7 +15,7 @@ class HelpInjector: NSObject {
         viewController.routeResolver = QRouteResolver(
             AppRoute.plan.findDescendant(AppRoute.id.Help)!,
 
-            toChild: QRouteResolver.DefaultAction.ToChildKeyed([
+            toChild: QRouteResolver.DefaultAction.ToChildSwitch([
                 AppRoute.id.ContactUs: ToChildSegueResolverAction(segueId: SegueId.ToContactUs),
                 AppRoute.id.MessageCenter: ToChildSegueResolverAction(segueId: SegueId.ToMessageCenter)
                 ]),

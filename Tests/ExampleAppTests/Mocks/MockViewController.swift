@@ -47,4 +47,13 @@ class MockViewController: UIViewController {
         _presentedViewController = nil
         completion?()
     }
+
+    var wasCalled_performSegue: Bool = false
+    var valueFor_performSegue_identifier: String = ""
+    var valueFor_performSegue_sender: Any? = nil
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        wasCalled_performSegue = true
+        valueFor_performSegue_identifier = identifier
+        valueFor_performSegue_sender = sender
+    }
 }

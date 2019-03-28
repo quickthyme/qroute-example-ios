@@ -60,13 +60,6 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC1F63832220BC63003842BB"
-            BuildableName = "ExampleApp.app"
-            BlueprintName = "ExampleApp"
-            ReferencedContainer = "container:ExampleApp.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCE8368F2221D2C500E714F8"
             BuildableName = "ExampleAppTests.xctest"
             BlueprintName = "ExampleAppTests"
