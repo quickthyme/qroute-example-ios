@@ -5,10 +5,10 @@ import QRoute
 class ToDoDetailViewControllerTests: XCTestCase {
 
     var subject: ToDoDetailViewController!
-    var mockRouteDriver: MockQRouteDriver!
+    var mockRouteDriver: QRouteDriverMock!
 
     override func setUp() {
-        mockRouteDriver = MockQRouteDriver()
+        mockRouteDriver = QRouteDriverMock()
         subject = (StoryboardLoader.loadViewController(from: "ToDoDetail") as! ToDoDetailViewController)
         subject.routeDriver = mockRouteDriver
     }
@@ -30,8 +30,8 @@ class ToDoDetailViewControllerTests: XCTestCase {
                     mockRouteDriver.reset()
                     subject.contactUsNearAction(nil)
                     then("it should drive (sub) to Contact Us") {
-                        XCTAssertEqual(mockRouteDriver.timesCalled_driveSub, 1)
-                        XCTAssertEqual(mockRouteDriver.valueFor_driveSub_targetId, AppRoute.id.ContactUs)
+                        XCTAssertEqual(mockRouteDriver.timesCalled["driveSub()"], 1)
+                        XCTAssertEqual(mockRouteDriver.getArgument("driveSub()", "targetId") as? String, AppRoute.id.ContactUs)
                     }
                 }
 
@@ -39,8 +39,8 @@ class ToDoDetailViewControllerTests: XCTestCase {
                     mockRouteDriver.reset()
                     subject.contactUsFarAction(nil)
                     then("it should drive all the way to Contact Us") {
-                        XCTAssertEqual(mockRouteDriver.timesCalled_driveTo, 1)
-                        XCTAssertEqual(mockRouteDriver.valueFor_driveTo_targetId, AppRoute.id.ContactUs)
+                        XCTAssertEqual(mockRouteDriver.timesCalled["driveTo()"], 1)
+                        XCTAssertEqual(mockRouteDriver.getArgument("driveTo()", "targetId") as? String, AppRoute.id.ContactUs)
                     }
                 }
             }

@@ -7,7 +7,7 @@ class MockViewControllerRoutableInjector: NSObject {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewController.routeResolver = MockQRouteResolver(
+        viewController.routeResolver = QRouteResolverMock(
             QRoute("MockViewControllerRoutable")
         )
     }

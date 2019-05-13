@@ -5,10 +5,10 @@ import QRoute
 class MessageCenterViewControllerTests: XCTestCase {
 
     var subject: MessageCenterViewController!
-    var mockRouteDriver: MockQRouteDriver!
+    var mockRouteDriver: QRouteDriverMock!
 
     override func setUp() {
-        mockRouteDriver = MockQRouteDriver()
+        mockRouteDriver = QRouteDriverMock()
         subject = (StoryboardLoader.loadViewController(from: "MessageCenter") as! MessageCenterViewController)
         subject.routeDriver = mockRouteDriver
     }
@@ -23,8 +23,8 @@ class MessageCenterViewControllerTests: XCTestCase {
                 mockRouteDriver.reset()
                 subject.playAction(nil)
                 then("it should drive (sub) to `self`") {
-                    XCTAssertEqual(mockRouteDriver.timesCalled_driveSub, 1)
-                    XCTAssertEqual(mockRouteDriver.valueFor_driveSub_targetId, AppRoute.id.MessageCenter)
+                    XCTAssertEqual(mockRouteDriver.timesCalled["driveSub()"], 1)
+                    XCTAssertEqual(mockRouteDriver.getArgument("driveSub()", "targetId") as? String, AppRoute.id.MessageCenter)
                 }
             }
         }

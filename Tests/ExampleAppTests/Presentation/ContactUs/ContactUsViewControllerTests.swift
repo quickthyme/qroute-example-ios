@@ -5,10 +5,10 @@ import QRoute
 class ContactUsViewControllerTests: XCTestCase {
 
     var subject: ContactUsViewController!
-    var mockRouteDriver: MockQRouteDriver!
+    var mockRouteDriver: QRouteDriverMock!
 
     override func setUp() {
-        mockRouteDriver = MockQRouteDriver()
+        mockRouteDriver = QRouteDriverMock()
         subject = (StoryboardLoader.loadViewController(from: "ContactUs") as! ContactUsViewController)
         subject.routeDriver = mockRouteDriver
     }
@@ -21,7 +21,7 @@ class ContactUsViewControllerTests: XCTestCase {
             when("dismissAction") {
                 subject.dismissAction(nil)
                 then("it should drive to parent") {
-                    XCTAssertEqual(mockRouteDriver.timesCalled_driveParent, 1)
+                    XCTAssertEqual(mockRouteDriver.timesCalled["driveParent()"], 1)
                 }
             }
         }

@@ -5,10 +5,10 @@ import QRoute
 class ToDoViewControllerTests: XCTestCase {
 
     var subject: ToDoViewController!
-    var mockRouteDriver: MockQRouteDriver!
+    var mockRouteDriver: QRouteDriverMock!
 
     override func setUp() {
-        mockRouteDriver = MockQRouteDriver()
+        mockRouteDriver = QRouteDriverMock()
         subject = (StoryboardLoader.loadViewController(from: "ToDo") as! ToDoViewController)
         subject.routeDriver = mockRouteDriver
     }
@@ -22,9 +22,10 @@ class ToDoViewControllerTests: XCTestCase {
                 mockRouteDriver.reset()
                 subject.toDoTableViewManager(ToDoTableViewManager(), didSelectId: 36)
                 then("it should drive to ToDoDetail with toDoId input") {
-                    XCTAssertEqual(mockRouteDriver.timesCalled_driveTo, 1)
-                    XCTAssertEqual(mockRouteDriver.valueFor_driveTo_targetId, AppRoute.id.ToDoDetail)
-                    XCTAssertEqual(mockRouteDriver.valueFor_driveTo_input?["toDoId"] as? Int, 36)
+                    let receivedInput = mockRouteDriver.getArgument("driveTo()", "input") as! [String:Any]
+                    XCTAssertEqual(mockRouteDriver.timesCalled["driveTo()"], 1)
+                    XCTAssertEqual(mockRouteDriver.getArgument("driveTo()", "targetId") as? String, AppRoute.id.ToDoDetail)
+                    XCTAssertEqual(receivedInput["toDoId"] as? Int, 36)
                 }
             }
         }

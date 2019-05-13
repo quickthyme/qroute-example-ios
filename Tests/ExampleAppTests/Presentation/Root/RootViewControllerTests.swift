@@ -5,10 +5,10 @@ import QRoute
 class RootViewControllerTests: XCTestCase {
 
     var subject: RootViewController!
-    var mockRouteDriver: MockQRouteDriver!
+    var mockRouteDriver: QRouteDriverMock!
 
     override func setUp() {
-        mockRouteDriver = MockQRouteDriver()
+        mockRouteDriver = QRouteDriverMock()
         subject = (StoryboardLoader
             .loadViewController("RootViewController",
                                 from: "Root") as! RootViewController)

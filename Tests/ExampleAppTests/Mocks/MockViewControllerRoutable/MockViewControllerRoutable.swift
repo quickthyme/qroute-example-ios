@@ -8,7 +8,7 @@ class MockViewControllerRoutable: MockViewController, QRoutable {
 
     init(_ route: QRoute? = nil) {
         super.init(nibName: nil, bundle: nil)
-        self.routeResolver = MockQRouteResolver(route ?? QRoute("\(type(of: self))"))
+        self.routeResolver = QRouteResolverMock(route ?? QRoute("\(type(of: self))"))
     }
 
     required init?(coder aDecoder: NSCoder) {
